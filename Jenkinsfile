@@ -11,7 +11,7 @@ pipeline {
                     
                     ls -ltr
                     pwd
-                    terraform init
+                    terraform init -reconfigure
                 '''
             }
         }
