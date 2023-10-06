@@ -42,17 +42,17 @@ pipeline {
                 '''
             }
         }
-        stage('destroy') {
-            steps{
+        // stage('destroy') {
+        //     steps{
                 
-                sh '''
+        //         sh '''
                     
-                    ls -ltr
-                    pwd
-                    terraform destroy -auto-approve
-                '''
-            }
-        }
+        //             ls -ltr
+        //             pwd
+        //             terraform destroy -auto-approve
+        //         '''
+        //     }
+        // }
     }
 
     post { 
